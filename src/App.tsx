@@ -4,6 +4,7 @@ import { MsalProvider } from "@azure/msal-react";
 import { msalInstance } from "./features/auth/msalConfig";
 import PrivateRoute from "./features/auth/PrivateRoute";
 import LogoutButton from "./features/auth/LogoutButton";
+import AuthTestButton from "./features/auth/AuthTestButton";
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
             >
               Learn React
             </a>
+            <AuthTestButton/>
           </header>
         </PrivateRoute>  
       </MsalProvider>
